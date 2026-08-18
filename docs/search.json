@@ -28,13 +28,6 @@
     "text": "Scoring rules\n\n\n\n\n\n\n\n\n\n\n\nA scoring rule is proper if\n\n\\[ E\\left[\\mathcal{S}\\big(\\pi_i^{\\text{true}}(s\\mid t), D_i(t,s)\\big) \\right] \\leq E\\left[\\mathcal{S}\\big(\\widehat{\\pi}_i(s\\mid t), D_i(t,s)\\big) \\right]. \\]\n\nIt is strictly proper if it holds with equality if and only if \\(\\pi_i^{\\text{true}}(s\\mid t)\\equiv \\widehat{\\pi}_i(s\\mid t)\\).\n\n\n\n\n\nIt is centered if \\(\\mathcal{S}(1,1)=\\mathcal{S}(0,0)=0\\)."
   },
   {
-    "objectID": "index.html#scoring-rules-limitations",
-    "href": "index.html#scoring-rules-limitations",
-    "title": "",
-    "section": "Scoring rules: limitations",
-    "text": "Scoring rules: limitations\n\n\n\n\nThey quantify predictive accuracy, but not the consequences of decisions based on predictions.\n\n\n\n\n\nThey do not account for the asymmetric harms of false-positives and false-negatives decisions."
-  },
-  {
     "objectID": "index.html#clinical-utility",
     "href": "index.html#clinical-utility",
     "title": "",

@@ -108,20 +108,21 @@ format:
   - It is [centered]{style="color:#ba1732;"} if $\mathcal{S}(1,1)=\mathcal{S}(0,0)=0$.
 </div>
 
-<div style="position:absolute; top:18%; left:10%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:18%; left:10%;" class="fragment fade-in">
   <img src="images/table1.svg" style="width:100%; text-align:center;">
 </div>
 
+<div style="position:absolute; top:3%; left:67%;" class="fragment fade-in">
+  <img src="images/arrow1.svg" style="width:110%; text-align:center;">
+</div>
 
-## Scoring rules: limitations 
+<div style="position:absolute; top:65%; left:6%;" class="fragment fade-in">
+  <img src="images/arrow2.svg" style="width:50%; text-align:center;">
+</div>
 
-<div style="height:15px;"></div>
 
-- They quantify predictive accuracy, but [not the consequences of decisions based on predictions]{style="color:#ba1732;"}.
 
-<div style="height:10px;"></div>
 
-- They do not account for the [asymmetric harms of false-positives and false-negatives]{style="color:#ba1732;"} decisions.
 
 
 ## Clinical utility 
