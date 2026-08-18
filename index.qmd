@@ -121,10 +121,6 @@ format:
 </div>
 
 
-
-
-
-
 ## Clinical utility 
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
