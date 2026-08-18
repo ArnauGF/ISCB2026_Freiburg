@@ -1,0 +1,15 @@
+project:
+  type: website
+  output-dir: docs
+
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+    navigation-mode: linear
+    ccs: custom.css
+
+
+resources:
+  - images/
