@@ -9,7 +9,7 @@ format:
     menu: false
 ---
 
-## { data-state="cover-slide" data-background-image="images/oslo_cover.png" data-background-size="cover" visibility="uncounted"}
+## { data-state="cover-slide" data-background-image="images/cover.png" data-background-size="cover" visibility="uncounted"}
 
 ## Motivation 
 
@@ -335,8 +335,6 @@ $$\scriptsize\begin{split}
 * [IWEC]{style="color:#BA1732;"} $\longrightarrow$ robust across weight functions.
 
 
-
-
 ## Contribution 
 
 ::: {.fragment .fade-in-then-out}
@@ -352,7 +350,7 @@ $$\scriptsize\begin{split}
 
 :::
 
-## { data-state="cover-slide" data-background-image="images/oslo_contra.png" data-background-size="cover" visibility="uncounted"}
+## { data-state="cover-slide" data-background-image="images/contra.png" data-background-size="cover" visibility="uncounted"}
 
 
 ## Challenges of the data {visibility="uncounted"}
