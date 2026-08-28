@@ -454,8 +454,7 @@ $$\scriptsize \begin{split} \widehat{W}_i(t,s)=&\frac{\mathbf{1}\{T_i>t+s\}\math
 $$\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&\sum_{i=1}^n  \delta_i\mathbf{1}\{L_i<t<T_i\leq t+s\}\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
         &+ \mathbf{1}\{T_i>t+s\}\mathbf{1}\{L_i<t\}\text{IWEC}_w\{\pi_i(s\mid t),0\} \\
-        & + (1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}\left[\pi_i(s\mid t)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
-        + (1-\pi_i(s\mid t))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
+        & + (1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}\left[\pi_i(s\mid T_i)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\         + (1-\pi_i(s\mid T_i))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
     \end{split}$$
 
 
@@ -469,8 +468,7 @@ $$\scriptsize\require{color}\begin{split}
 $$\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&\sum_{i=1}^n  \textcolor{#F55129}{\delta_i\mathbf{1}\{L_i<t<T_i\leq t+s\}}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{1}\} \\
         &+ \mathbf{1}\{T_i>t+s\}\mathbf{1}\{L_i<t\}\text{IWEC}_w\{\pi_i(s\mid t),0\} \\
-        & + (1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}\left[\pi_i(s\mid t)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
-        + (1-\pi_i(s\mid t))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
+        & + (1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}\left[\pi_i(s\mid T_i)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\         + (1-\pi_i(s\mid T_i))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
     \end{split}$$
 
 
@@ -483,8 +481,7 @@ $$\scriptsize\require{color}\begin{split}
 $$\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&\sum_{i=1}^n  \delta_i\mathbf{1}\{L_i<t<T_i\leq t+s\}\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
         &+ \textcolor{#F55129}{\mathbf{1}\{T_i>t+s\}\mathbf{1}\{L_i<t\}}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{0}\} \\
-        & + (1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}\left[\pi_i(s\mid t)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
-        + (1-\pi_i(s\mid t))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
+        & + (1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}\left[\pi_i(s\mid T_i)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\         + (1-\pi_i(s\mid T_i))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
     \end{split}$$
 
 
@@ -497,8 +494,8 @@ $$\scriptsize\require{color}\begin{split}
 $$\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&\sum_{i=1}^n  \delta_i\mathbf{1}\{L_i<t<T_i\leq t+s\}\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
         &+ \mathbf{1}\{T_i>t+s\}\mathbf{1}\{L_i<t\}\text{IWEC}_w\{\pi_i(s\mid t),0\} \\
-        & + \textcolor{#F55129}{(1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}}\left[\textcolor{#F55129}{\pi_i(s\mid t)}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{1}\} \\
-        + \textcolor{#F55129}{(1-\pi_i(s\mid t))}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{0}\} \right].
+        & + \textcolor{#F55129}{(1-\delta_i)\mathbf{1}\{L_i<t<T_i\leq t+s\}}\left[\textcolor{#F55129}{\pi_i(s\mid T_i)}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{1}\} \\
+        + \textcolor{#F55129}{(1-\pi_i(s\mid T_i))}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{0}\} \right].
     \end{split}$$
 
 
