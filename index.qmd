@@ -97,15 +97,15 @@ format:
 
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-  - A scoring rule is [proper]{style="color:#F55129;"} if 
+  - [Proper]{style="color:#F55129;"} if 
   
   $$ E\left[\mathcal{S}\big(\pi_i^{\text{true}}(s\mid t), D_i(t,s)\big) \right] \leq E\left[\mathcal{S}\big(\widehat{\pi}_i(s\mid t), D_i(t,s)\big) \right]. $$
   
-  - It is [strictly proper]{style="color:#F55129;"} if it holds with equality if and only if $\pi_i^{\text{true}}(s\mid t)\equiv \widehat{\pi}_i(s\mid t)$.
+  - [Strictly proper]{style="color:#F55129;"} if it holds with equality $\Longleftrightarrow$ $\pi_i^{\text{true}}(s\mid t)\equiv \widehat{\pi}_i(s\mid t)$.
 
 <div style="height:10px;"></div>
 
-  - It is [centered]{style="color:#F55129;"} if $\mathcal{S}(1,1)=\mathcal{S}(0,0)=0$.
+  - [Centered]{style="color:#F55129;"} if $\mathcal{S}(1,1)=\mathcal{S}(0,0)=0$.
 </div>
 
 <div style="position:absolute; top:18%; left:10%;" class="fragment fade-in">
@@ -197,8 +197,18 @@ $$\normalsize\require{color}\begin{split}
   <img src="images/table3bis.svg" style="width:100%; text-align:center;">
 </div>
 
+<div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
+* A scoring rule is centered and strictly proper [$\Longleftrightarrow$]{style="color:#F55129;"} it can be represented by $\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)$ for some $w(\cdot)$.
+  + [$w(c)=1$]{style="color:#F55129;"} $\longrightarrow$ [Brier score]{style="color:#F55129;"}
+  + [$w(c)=c^{-1}(1-c)^{-1}$]{style="color:#F55129;"} $\longrightarrow$  [logarithmic score]{style="color:#F55129;"}
+</div>
+
 <div style="position:absolute; top:10%; left:12%;" class="fragment fade-in-then-out">
   <img src="images/ws_first.png" style="width:85%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:10%; left:12%;" class="fragment fade-in-then-out">
+  <img src="images/ws_first_arrow.png" style="width:85%; text-align:center;">
 </div>
 
 <div style="position:absolute; top:10%; left:12%;" class="fragment fade-in-then-out">
@@ -217,15 +227,10 @@ $$\normalsize\require{color}\begin{split}
   <img src="images/w3_l.png" style="width:85%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:10%; left:12%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:10%; left:12%;" class="fragment fade-in">
   <img src="images/ws_l.png" style="width:85%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:13%; left:0%;" class="fragment fade-in">
-* A scoring rule is centered and strictly proper [$\Longleftrightarrow$]{style="color:#F55129;"} it can be represented by $\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)$ for some $w(\cdot)$.
-  + [$w(c)=1$]{style="color:#F55129;"} $\longrightarrow$ [Brier score]{style="color:#F55129;"}
-  + [$w(c)=c^{-1}(1-c)^{-1}$]{style="color:#F55129;"} $\longrightarrow$  [logarithmic score]{style="color:#F55129;"}
-</div>
 
 
 

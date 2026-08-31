@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>quarto-input4d58bc4658a3c9cc</title>
+  <title>quarto-input673f6930056c46d8</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -206,17 +206,17 @@
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>A scoring rule is <span style="color:#F55129;">proper</span> if</li>
+<li><span style="color:#F55129;">Proper</span> if</li>
 </ul>
 <p><span class="math display">\[ E\left[\mathcal{S}\big(\pi_i^{\text{true}}(s\mid t), D_i(t,s)\big) \right] \leq E\left[\mathcal{S}\big(\widehat{\pi}_i(s\mid t), D_i(t,s)\big) \right]. \]</span></p>
 <ul>
-<li>It is <span style="color:#F55129;">strictly proper</span> if it holds with equality if and only if <span class="math inline">\(\pi_i^{\text{true}}(s\mid t)\equiv \widehat{\pi}_i(s\mid t)\)</span>.</li>
+<li><span style="color:#F55129;">Strictly proper</span> if it holds with equality <span class="math inline">\(\Longleftrightarrow\)</span> <span class="math inline">\(\pi_i^{\text{true}}(s\mid t)\equiv \widehat{\pi}_i(s\mid t)\)</span>.</li>
 </ul>
 <div style="height:10px;">
 
 </div>
 <ul>
-<li>It is <span style="color:#F55129;">centered</span> if <span class="math inline">\(\mathcal{S}(1,1)=\mathcal{S}(0,0)=0\)</span>.</li>
+<li><span style="color:#F55129;">Centered</span> if <span class="math inline">\(\mathcal{S}(1,1)=\mathcal{S}(0,0)=0\)</span>.</li>
 </ul>
 </div>
 <div class="fragment fade-in" style="position:absolute; top:18%; left:10%;">
@@ -302,8 +302,20 @@
 <div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:4%;">
 <p><img src="images/table3bis.svg" style="width:100%; text-align:center;"></p>
 </div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
+<ul>
+<li>A scoring rule is centered and strictly proper <span style="color:#F55129;"><span class="math inline">\(\Longleftrightarrow\)</span></span> it can be represented by <span class="math inline">\(\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)\)</span> for some <span class="math inline">\(w(\cdot)\)</span>.
+<ul>
+<li><span style="color:#F55129;"><span class="math inline">\(w(c)=1\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">Brier score</span></li>
+<li><span style="color:#F55129;"><span class="math inline">\(w(c)=c^{-1}(1-c)^{-1}\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">logarithmic score</span></li>
+</ul></li>
+</ul>
+</div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/ws_first.png" style="width:85%; text-align:center;"></p>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
+<p><img src="images/ws_first_arrow.png" style="width:85%; text-align:center;"></p>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/ws_shaded_area.png" style="width:85%; text-align:center;"></p>
@@ -317,17 +329,8 @@
 <div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/w3_l.png" style="width:85%; text-align:center;"></p>
 </div>
-<div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
+<div class="fragment fade-in" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/ws_l.png" style="width:85%; text-align:center;"></p>
-</div>
-<div class="fragment fade-in" style="position:absolute; top:13%; left:0%;">
-<ul>
-<li>A scoring rule is centered and strictly proper <span style="color:#F55129;"><span class="math inline">\(\Longleftrightarrow\)</span></span> it can be represented by <span class="math inline">\(\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)\)</span> for some <span class="math inline">\(w(\cdot)\)</span>.
-<ul>
-<li><span style="color:#F55129;"><span class="math inline">\(w(c)=1\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">Brier score</span></li>
-<li><span style="color:#F55129;"><span class="math inline">\(w(c)=c^{-1}(1-c)^{-1}\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">logarithmic score</span></li>
-</ul></li>
-</ul>
 </div>
 </section>
 <section id="estimation-under-ltrc-data" class="slide level2">
@@ -546,8 +549,7 @@
 <p><span class="math display">\[\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&amp;\sum_{i=1}^n  \delta_i\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
         &amp;+ \mathbf{1}\{T_i&gt;t+s\}\mathbf{1}\{L_i&lt;t\}\text{IWEC}_w\{\pi_i(s\mid t),0\} \\
-        &amp; + (1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\left[\pi_i(s\mid t)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
-        + (1-\pi_i(s\mid t))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
+        &amp; + (1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\left[\pi_i(s\mid T_i)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\         + (1-\pi_i(s\mid T_i))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
     \end{split}\]</span></p>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
@@ -557,8 +559,7 @@
 <p><span class="math display">\[\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&amp;\sum_{i=1}^n  \textcolor{#F55129}{\delta_i\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{1}\} \\
         &amp;+ \mathbf{1}\{T_i&gt;t+s\}\mathbf{1}\{L_i&lt;t\}\text{IWEC}_w\{\pi_i(s\mid t),0\} \\
-        &amp; + (1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\left[\pi_i(s\mid t)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
-        + (1-\pi_i(s\mid t))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
+        &amp; + (1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\left[\pi_i(s\mid T_i)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\         + (1-\pi_i(s\mid T_i))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
     \end{split}\]</span></p>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
@@ -568,8 +569,7 @@
 <p><span class="math display">\[\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&amp;\sum_{i=1}^n  \delta_i\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
         &amp;+ \textcolor{#F55129}{\mathbf{1}\{T_i&gt;t+s\}\mathbf{1}\{L_i&lt;t\}}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{0}\} \\
-        &amp; + (1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\left[\pi_i(s\mid t)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
-        + (1-\pi_i(s\mid t))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
+        &amp; + (1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\left[\pi_i(s\mid T_i)\text{IWEC}_w\{\pi_i(s\mid t),1\} \\         + (1-\pi_i(s\mid T_i))\text{IWEC}_w\{\pi_i(s\mid t),0\} \right].
     \end{split}\]</span></p>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
@@ -579,8 +579,8 @@
 <p><span class="math display">\[\scriptsize\require{color}\begin{split}
         \widehat{\text{eIWEC}}^{\text{MB}}_w(t,s)=  \frac{1}{n_t}&amp;\sum_{i=1}^n  \delta_i\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}\text{IWEC}_w\{\pi_i(s\mid t),1\} \\
         &amp;+ \mathbf{1}\{T_i&gt;t+s\}\mathbf{1}\{L_i&lt;t\}\text{IWEC}_w\{\pi_i(s\mid t),0\} \\
-        &amp; + \textcolor{#F55129}{(1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}}\left[\textcolor{#F55129}{\pi_i(s\mid t)}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{1}\} \\
-        + \textcolor{#F55129}{(1-\pi_i(s\mid t))}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{0}\} \right].
+        &amp; + \textcolor{#F55129}{(1-\delta_i)\mathbf{1}\{L_i&lt;t&lt;T_i\leq t+s\}}\left[\textcolor{#F55129}{\pi_i(s\mid T_i)}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{1}\} \\
+        + \textcolor{#F55129}{(1-\pi_i(s\mid T_i))}\text{IWEC}_w\{\pi_i(s\mid t),\textcolor{#F55129}{0}\} \right].
     \end{split}\]</span></p>
 </div>
 </section>
