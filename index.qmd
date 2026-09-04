@@ -311,11 +311,11 @@ $$\scriptsize\begin{split}
 </div>
 
 <div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
-  <img src="images/wdcs2_lmk210.png" style="width:100%; text-align:center;">
+  <img src="images/wdcs2_tw2.png" style="width:100%; text-align:center;">
 </div>
 
 <div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
-  <img src="images/wdcs2_lmk217.png" style="width:100%; text-align:center;">
+  <img src="images/wdcs2_tw3.png" style="width:100%; text-align:center;">
 </div>
 
 ## Simulation study: results 
