@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>quarto-input954ecd223731b6cc</title>
+  <title>quarto-inputd69ce6f5c896122f</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -162,7 +162,7 @@
 <p><span style="color:#228B22;">TN</span></p>
 </div>
 <div class="fragment fade-in" style="position:absolute; top:90%; left:78%;">
-<p><span style="color:#D30000;">FN</span></p>
+<p><span style="color:#800808;">FN</span></p>
 </div>
 </section>
 <section id="definitions-and-notation" class="slide level2">
@@ -219,34 +219,34 @@
 <li><span style="color:#F55129;">Centered</span> if <span class="math inline">\(\mathcal{S}(1,1)=\mathcal{S}(0,0)=0\)</span>.</li>
 </ul>
 </div>
-<div class="fragment fade-in" style="position:absolute; top:18%; left:10%;">
-<p><img src="images/table1.svg" style="width:100%; text-align:center;"></p>
+<div class="fragment fade-in" style="position:absolute; top:16%; left:10%;">
+<p><img src="images/table1.svg" style="width:90%; text-align:center;"></p>
 </div>
-<div class="fragment fade-in" style="position:absolute; top:3%; left:67%;">
-<p><img src="images/arrow1.svg" style="width:110%; text-align:center;"></p>
-</div>
-<div class="fragment fade-in" style="position:absolute; top:65%; left:6%;">
-<p><img src="images/arrow2.svg" style="width:50%; text-align:center;"></p>
+<div class="fragment fade-in" style="position:absolute; top:73%; left:20.8%;">
+<p><img src="images/new_noarrow2.svg" style="width:75%; text-align:center;"></p>
 </div>
 </section>
 <section id="clinical-utility" class="slide level2">
 <h2>Clinical utility</h2>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
-<div style="height:15px;">
-
-</div>
-<ul>
-<li>Focus on the <span style="color:#F55129;">quality of decisions</span> driven by dynamic predictions.</li>
-</ul>
 <div style="height:10px;">
 
 </div>
 <ul>
-<li>Based on a clinically relevant <span style="color:#F55129;">decision threshold</span> <span class="math inline">\(c\in(0,1)\)</span>.</li>
+<li><span style="color:#F55129;">Quality of decisions</span> driven by dynamic predictions.</li>
 </ul>
+<div style="height:5px;">
+
 </div>
-<div class="fragment fade-in-then-out" style="position:absolute; top:15%; left:3%;">
+<ul>
+<li><span style="color:#F55129;">Decision threshold</span> <span class="math inline">\(c\in(0,1)\)</span>.</li>
+</ul>
+<div style="height:7px;">
+
+</div>
+<div style="position:absolute; top:80%; left:10%;">
 <p><img src="images/decision_rules.svg" style="width:100%; text-align:center;"></p>
+</div>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
@@ -264,7 +264,7 @@
 <p><img src="images/table2.svg" style="width:100%; text-align:center;"></p>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:62%; left:3%;">
-<p><img src="images/arrow3.svg" style="width:67%; text-align:center;"></p>
+<p><img src="images/arrow3_new.svg" style="width:67%; text-align:center;"></p>
 </div>
 </section>
 <section id="integrated-weighted-expected-cost" class="slide level2">
@@ -382,7 +382,7 @@
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right)
 \end{split}\]</span></p>
 <ul>
-<li><span style="color:#F55129;">Dynamic predictions</span> <span class="math inline">\(\longrightarrow\)</span> <span class="math inline">\((29, 30]\)</span>, <span class="math inline">\((30, 31]\)</span> and <span class="math inline">\((31, 32]\)</span> weeks of gestation.</li>
+<li><span style="color:#F55129;">Dynamic predictions</span> <span class="math inline">\(\longrightarrow\)</span> <span class="math inline">\((t,t+s]\)</span>, where <span class="math inline">\(t=26, 27, \dots, 33\)</span> and <span class="math inline">\(s=1\)</span>.</li>
 <li>We consider <span style="color:#F55129;"><span class="math inline">\(c\in(0.1,0.3)\)</span></span> and <span style="color:#F55129;"><span class="math inline">\(w(c;5.16, 17.62)\)</span></span>.</li>
 </ul>
 </div>
@@ -623,7 +623,7 @@
 <li><span style="color:#F55129;">Time-to-event</span> submodel:</li>
 </ul>
 <p><span class="math display">\[\scriptsize\begin{split}
-\textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^4\alpha_j f_j\{m_{ji}(t)\} \right)
+\textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{m_{ji}(t)\} \right)
 \end{split}\]</span></p>
 <ul>
 <li><span class="math inline">\(\boldsymbol{X}_{i}\)</span> <span class="math inline">\(\longrightarrow\)</span> baseline covariates including age, smoking status, previous pregnancy, diabetes mellitus, etc.</li>

@@ -46,7 +46,7 @@ format:
 </div>
 
 <div style="position:absolute; top:90%; left:78%;" class="fragment fade-in">
-  [FN]{style="color:#D30000;"}
+  [FN]{style="color:#800808;"}
 </div>
 
 
@@ -108,35 +108,38 @@ format:
   - [Centered]{style="color:#F55129;"} if $\mathcal{S}(1,1)=\mathcal{S}(0,0)=0$.
 </div>
 
-<div style="position:absolute; top:18%; left:10%;" class="fragment fade-in">
-  <img src="images/table1.svg" style="width:100%; text-align:center;">
+<div style="position:absolute; top:16%; left:10%;" class="fragment fade-in">
+  <img src="images/table1.svg" style="width:90%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:3%; left:67%;" class="fragment fade-in">
-  <img src="images/arrow1.svg" style="width:110%; text-align:center;">
+<div style="position:absolute; top:73%; left:20.8%;" class="fragment fade-in">
+  <img src="images/new_noarrow2.svg" style="width:75%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:65%; left:6%;" class="fragment fade-in">
-  <img src="images/arrow2.svg" style="width:50%; text-align:center;">
-</div>
+
+
 
 
 ## Clinical utility 
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
 
-<div style="height:15px;"></div>
-
-  - Focus on the [quality of decisions]{style="color:#F55129;"} driven by dynamic predictions.
-  
 <div style="height:10px;"></div>
 
-  - Based on a clinically relevant [decision threshold]{style="color:#F55129;"} $c\in(0,1)$.
-</div>
+  - [Quality of decisions]{style="color:#F55129;"} driven by dynamic predictions.
+  
+<div style="height:5px;"></div>
 
-<div style="position:absolute; top:15%; left:3%;" class="fragment fade-in-then-out">
+  - [Decision threshold]{style="color:#F55129;"} $c\in(0,1)$.
+  
+<div style="height:7px;"></div>
+
+<div style="position:absolute; top:80%; left:10%;">
   <img src="images/decision_rules.svg" style="width:100%; text-align:center;">
 </div>
+
+</div>
+
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
   - Widely used clinical utility metric $\longrightarrow$ [net benefit (NB)]{style="color:#F55129;"}
@@ -157,7 +160,7 @@ $$\normalsize\require{color}\begin{split}
 
 
 <div style="position:absolute; top:62%; left:3%;" class="fragment fade-in-then-out">
-  <img src="images/arrow3.svg" style="width:67%; text-align:center;">
+  <img src="images/arrow3_new.svg" style="width:67%; text-align:center;">
 </div>
 
 
@@ -277,7 +280,7 @@ $$\scriptsize\begin{split}
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right) 
 \end{split}$$
 
-- [Dynamic predictions]{style="color:#F55129;"} $\longrightarrow$  $(29, 30]$, $(30, 31]$ and $(31, 32]$ weeks of gestation. 
+- [Dynamic predictions]{style="color:#F55129;"} $\longrightarrow$  $(t,t+s]$, where $t=26, 27, \dots, 33$ and $s=1$. 
 - We consider [$c\in(0.1,0.3)$]{style="color:#F55129;"} and [$w(c;5.16, 17.62)$]{style="color:#F55129;"}.
 </div>
 
@@ -537,7 +540,7 @@ $$ \require{color} Y_{ji}(t) = m_{ji}(t) + \varepsilon_{ji}(t), \quad j=1,\dots,
 - [Time-to-event]{style="color:#F55129;"} submodel:
 
 $$\scriptsize\begin{split} 
-\textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^4\alpha_j f_j\{m_{ji}(t)\} \right) 
+\textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{m_{ji}(t)\} \right) 
 \end{split}$$
 
 - $\boldsymbol{X}_{i}$ $\longrightarrow$ baseline covariates including age, smoking status, previous pregnancy, diabetes mellitus, etc. 
