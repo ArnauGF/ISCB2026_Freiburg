@@ -280,7 +280,7 @@ $$\scriptsize\begin{split}
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right) 
 \end{split}$$
 
-- [Dynamic predictions]{style="color:#F55129;"} $\longrightarrow$  $(t,t+s]$, where $t=26, 27, \dots, 33$ and $s=1$. 
+- [Dynamic predictions]{style="color:#F55129;"} $\longrightarrow$  $(t,t+s]$, where $t=26, 27, \dots, 33$ and $s=1$ weeks. 
 - We consider [$c\in(0.1,0.3)$]{style="color:#F55129;"} and [$w(c;5.16, 17.62)$]{style="color:#F55129;"}.
 </div>
 
