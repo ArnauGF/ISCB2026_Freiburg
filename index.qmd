@@ -57,18 +57,18 @@ format:
 
 ## Dynamic predictions
 
-<div style="position:absolute; top:20%; left:9%;" class="fragment fade-in">
+<div style="position:absolute; top:18%; left:9%;" class="fragment fade-in">
   $$
   \normalsize\require{color}
   \pi_{i}(s \mid t)=\operatorname{Pr}\left(T_{i}^* \leq t+s \mid T_{i}^*>t, \colorbox{#F55129}{$\color{#ffffff}\boldsymbol{\mathcal{H}}_i(t)$}\right)
   $$
 </div>
 
-<div style="position:absolute; top:31%; left:19%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:31%; left:18%;" class="fragment fade-in-then-out">
   <img src="images/not1.svg" style="width:90%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:31.5%; left:50%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:31.5%; left:49%;" class="fragment fade-in-then-out">
   <img src="images/not2.svg" style="width:90%; text-align:center;">
 </div>
 
