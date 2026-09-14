@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>quarto-input242401034105a0ff</title>
+  <title>quarto-input47acc4fb77c25fef</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -162,32 +162,25 @@
 <p><span style="color:#228B22;">TN</span></p>
 </div>
 <div class="fragment fade-in" style="position:absolute; top:90%; left:78%;">
-<p><span style="color:#800808;">FN</span></p>
+<p><span style="color:#F55129;">FN</span></p>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:80%; left:85%;">
+<p><img src="images/caution.svg" style="width:78%; text-align:center;"></p>
 </div>
 </section>
-<section id="definitions-and-notation" class="slide level2">
-<h2>Definitions and notation</h2>
-<div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:0%;">
-<ul>
-<li><span class="math inline">\(i=1,\dotsc,n\)</span> individuals</li>
-<li><span class="math inline">\(\require{color}\textcolor{#F55129}{T_i^*}\)</span> true time until event</li>
-<li><span class="math inline">\(\require{color}\textcolor{#F55129}{C_i}\)</span> right-censoring times</li>
-<li><span class="math inline">\(\require{color}\textcolor{#F55129}{T_i=\min(T_i^*, C_i)}\)</span> observed times</li>
-<li><span class="math inline">\(\require{color}\textcolor{#F55129}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}\)</span> censoring indicator</li>
-<li><span class="math inline">\(\require{color}\textcolor{#F55129}{L_i}\)</span> left-truncation times</li>
-<li><span class="math inline">\(\require{color}\textcolor{#F55129}{\boldsymbol{\mathcal{H}}_i(t)}\)</span> available history at time <span class="math inline">\(t\)</span></li>
-</ul>
-</div>
-<div class="fragment fade-in" style="position:absolute; top:12%; left:0%;">
-<ul>
-<li><span style="color:#F55129;">Dynamic predictions</span></li>
-</ul>
-</div>
-<div class="fragment fade-in" style="position:absolute; top:22%; left:9%;">
+<section id="dynamic-predictions" class="slide level2">
+<h2>Dynamic predictions</h2>
+<div class="fragment fade-in" style="position:absolute; top:20%; left:9%;">
 <p><span class="math display">\[
   \normalsize\require{color}
   \pi_{i}(s \mid t)=\operatorname{Pr}\left(T_{i}^* \leq t+s \mid T_{i}^*&gt;t, \colorbox{#F55129}{$\color{#ffffff}\boldsymbol{\mathcal{H}}_i(t)$}\right)
   \]</span></p>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:31%; left:19%;">
+<p><img src="images/not1.svg" style="width:90%; text-align:center;"></p>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:31.5%; left:50%;">
+<p><img src="images/not2.svg" style="width:90%; text-align:center;"></p>
 </div>
 <div class="fragment fade-in" style="position:absolute; top:45%; left:12%;">
 <p><img src="images/dynamic_pred.svg" style="width:90%; text-align:center;"></p>
@@ -275,7 +268,7 @@
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \int_0^1\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)w(c)dc \end{split} \]</span></p>
 <ul>
-<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function reflecting the <span style="color:#F55129;">clinical relevance of different <span class="math inline">\(c\)</span>’s</span></li>
+<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function reflecting the <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
@@ -284,7 +277,7 @@
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} \]</span></p>
 <ul>
-<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function reflecting the <span style="color:#F55129;">clinical relevance of different <span class="math inline">\(c\)</span>’s</span></li>
+<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function reflecting the <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
@@ -301,15 +294,6 @@
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:4%;">
 <p><img src="images/table3bis.svg" style="width:100%; text-align:center;"></p>
-</div>
-<div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
-<ul>
-<li>A scoring rule is centered and strictly proper <span style="color:#F55129;"><span class="math inline">\(\Longleftrightarrow\)</span></span> it can be represented by <span class="math inline">\(\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)\)</span> for some <span class="math inline">\(w(\cdot)\)</span>.
-<ul>
-<li><span style="color:#F55129;"><span class="math inline">\(w(c)=1\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">Brier score</span></li>
-<li><span style="color:#F55129;"><span class="math inline">\(w(c)=c^{-1}(1-c)^{-1}\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">logarithmic score</span></li>
-</ul></li>
-</ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/ws_first.png" style="width:85%; text-align:center;"></p>
@@ -329,8 +313,17 @@
 <div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/w3_l.png" style="width:85%; text-align:center;"></p>
 </div>
-<div class="fragment fade-in" style="position:absolute; top:10%; left:12%;">
+<div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/ws_l.png" style="width:85%; text-align:center;"></p>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
+<ul>
+<li>A scoring rule is centered and strictly proper <span style="color:#F55129;"><span class="math inline">\(\Longleftrightarrow\)</span></span> it can be represented by <span class="math inline">\(\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)\)</span> for some <span class="math inline">\(w(\cdot)\)</span>.
+<ul>
+<li><span style="color:#F55129;"><span class="math inline">\(w(c)=1\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">Brier score</span></li>
+<li><span style="color:#F55129;"><span class="math inline">\(w(c)=c^{-1}(1-c)^{-1}\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">logarithmic score</span></li>
+</ul></li>
+</ul>
 </div>
 </section>
 <section id="estimation-under-ltrc-data" class="slide level2">
@@ -481,6 +474,17 @@
 </section>
 <section id="ipw-estimator" class="slide level2" data-visibility="uncounted">
 <h2>IPW estimator</h2>
+<div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:0%;">
+<ul>
+<li><span class="math inline">\(i=1,\dotsc,n\)</span> individuals</li>
+<li><span class="math inline">\(\require{color}\textcolor{#F55129}{T_i^*}\)</span> true time until event</li>
+<li><span class="math inline">\(\require{color}\textcolor{#F55129}{C_i}\)</span> right-censoring times</li>
+<li><span class="math inline">\(\require{color}\textcolor{#F55129}{T_i=\min(T_i^*, C_i)}\)</span> observed times</li>
+<li><span class="math inline">\(\require{color}\textcolor{#F55129}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}\)</span> censoring indicator</li>
+<li><span class="math inline">\(\require{color}\textcolor{#F55129}{L_i}\)</span> left-truncation times</li>
+<li><span class="math inline">\(\require{color}\textcolor{#F55129}{\boldsymbol{\mathcal{H}}_i(t)}\)</span> available history at time <span class="math inline">\(t\)</span></li>
+</ul>
+</div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
 <li>We define the <span style="color:#F55129;">IPW estimator</span>:</li>
