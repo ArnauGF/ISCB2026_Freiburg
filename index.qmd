@@ -64,11 +64,11 @@ format:
   $$
 </div>
 
-<div style="position:absolute; top:33%; left:17%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:33.5%; left:17.25%;" class="fragment fade-in-then-out">
   <img src="images/not1.svg" style="width:90%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:33.5%; left:48%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:33.5%; left:47.5%;" class="fragment fade-in-then-out">
   <img src="images/not2.svg" style="width:90%; text-align:center;">
 </div>
 
