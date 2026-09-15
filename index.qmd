@@ -67,7 +67,7 @@ format:
 <div style="position:absolute; top:40%; left:0%;" class="fragment fade-in-then-out">
 <div style="height:15px;"></div>
   - [$T_i^*$]{style="color:#F55129;"} true time until delivery
-<div style="height:20px;"></div>
+<div style="height:35px;"></div>
   - [$\mathcal{H}_i(t)$]{style="color:#F55129;"} available history at time $t$
 </div>
 
