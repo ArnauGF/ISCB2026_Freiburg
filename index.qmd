@@ -64,12 +64,11 @@ format:
   $$
 </div>
 
-<div style="position:absolute; top:33.5%; left:17.25%;" class="fragment fade-in-then-out">
-  <img src="images/not1.svg" style="width:90%; text-align:center;">
-</div>
-
-<div style="position:absolute; top:33.5%; left:47.5%;" class="fragment fade-in-then-out">
-  <img src="images/not2.svg" style="width:90%; text-align:center;">
+<div style="position:absolute; top:40%; left:0%;" class="fragment fade-in-then-out">
+<div style="height:15px;"></div>
+  - [$T_i^*$]{style="color:#F55129;"} true time until delivery
+<div style="height:20px;"></div>
+  - [$\mathcal{H}_i(t)$]{style="color:#F55129;"} available history at time $t$
 </div>
 
 <div style="position:absolute; top:45%; left:12%;" class="fragment fade-in">
