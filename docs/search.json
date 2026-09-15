@@ -18,7 +18,7 @@
     "href": "index.html#dynamic-predictions",
     "title": "",
     "section": "Dynamic predictions",
-    "text": "Dynamic predictions\n\n\\[\n  \\normalsize\\require{color}\n  \\pi_{i}(s \\mid t)=\\operatorname{Pr}\\left(T_{i}^* \\leq t+s \\mid T_{i}^*&gt;t, \\colorbox{#F55129}{$\\color{#ffffff}\\boldsymbol{\\mathcal{H}}_i(t)$}\\right)\n  \\]\n\n\n\n\n\n\n\\(T_i^*\\) true time until delivery\n\n\n\n\\(\\mathcal{H}_i(t)\\) available history at time \\(t\\)"
+    "text": "Dynamic predictions\n\n\\[\n  \\normalsize\\require{color}\n  \\pi_{i}(s \\mid t)=\\operatorname{Pr}\\left(T_{i}^* \\leq t+s \\mid T_{i}^*&gt;t, \\boldsymbol{\\mathcal{H}}_i(t)\\right)\n  \\]\n\n\n\\[\n  \\normalsize\\require{color}\n  \\pi_{i}(s \\mid t)=\\operatorname{Pr}\\left(\\textcolor{#F55129}{T_{i}^*} \\leq t+s \\mid \\textcolor{#F55129}{T_{i}^*}&gt;t, \\textcolor{#F55129}{\\boldsymbol{\\mathcal{H}}_i(t)}\\right)\n  \\]\n\n\n\n\n\\(T_i^*\\) true time until delivery\n\n\n\n\n\n\\(\\mathcal{H}_i(t)\\) available history at time \\(t\\)\n\n\n\n\\[\n  \\normalsize\\require{color}\n  \\pi_{i}(s \\mid t)=\\operatorname{Pr}\\left(T_{i}^* \\leq t+s \\mid T_{i}^*&gt;t, \\colorbox{#F55129}{$\\color{#ffffff}\\boldsymbol{\\mathcal{H}}_i(t)$}\\right)\n  \\]"
   },
   {
     "objectID": "index.html#scoring-rules",

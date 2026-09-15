@@ -57,6 +57,28 @@ format:
 
 ## Dynamic predictions
 
+<div style="position:absolute; top:18%; left:9%;" class="fragment fade-in-then-out">
+  $$
+  \normalsize\require{color}
+  \pi_{i}(s \mid t)=\operatorname{Pr}\left(T_{i}^* \leq t+s \mid T_{i}^*>t, \boldsymbol{\mathcal{H}}_i(t)\right)
+  $$
+</div>
+
+<div style="position:absolute; top:18%; left:9%;" class="fragment fade-in-then-out">
+$$
+  \normalsize\require{color}
+  \pi_{i}(s \mid t)=\operatorname{Pr}\left(\textcolor{#F55129}{T_{i}^*} \leq t+s \mid \textcolor{#F55129}{T_{i}^*}>t, \textcolor{#F55129}{\boldsymbol{\mathcal{H}}_i(t)}\right)
+  $$
+<div style="height:35px;"></div>
+<div style="text-align: center;">
+[$T_i^*$]{style="color:#F55129;"} true time until delivery
+</div>
+<div style="height:35px;"></div>
+<div style="text-align: center;">
+[$\mathcal{H}_i(t)$]{style="color:#F55129;"} available history at time $t$
+</div>
+</div>
+
 <div style="position:absolute; top:18%; left:9%;" class="fragment fade-in">
   $$
   \normalsize\require{color}
@@ -64,12 +86,6 @@ format:
   $$
 </div>
 
-<div style="position:absolute; top:40%; left:0%;" class="fragment fade-in-then-out">
-<div style="height:15px;"></div>
-  - [$T_i^*$]{style="color:#F55129;"} true time until delivery
-<div style="height:35px;"></div>
-  - [$\mathcal{H}_i(t)$]{style="color:#F55129;"} available history at time $t$
-</div>
 
 <div style="position:absolute; top:45%; left:12%;" class="fragment fade-in">
   <img src="images/dynamic_pred.svg" style="width:90%; text-align:center;">
