@@ -4,7 +4,7 @@
     "href": "index.html#motivation",
     "title": "",
     "section": "Motivation",
-    "text": "Motivation\n\n\nEvaluate dynamic predictions of imminent delivery (7 days) in pregnancies complicated by early-onset fetal growth restriction.\nMain goal \\(\\longrightarrow\\) optimizing antenatal corticosteroid (CCS) administration\n\n\n\n\n\n\n\nOPTICORE data \\(\\longrightarrow\\) multicenter cohort study in the Netherlands"
+    "text": "Motivation\n\n\nEvaluate dynamic predictions of imminent delivery in pregnancies with FGR.\n\n\n\nMain goal \\(\\longrightarrow\\) optimizing antenatal CCSs administration\n\n\n\n\n\n\n\nOPTICORE \\(\\longrightarrow\\) multicenter cohort study in the Netherlands"
   },
   {
     "objectID": "index.html#asymmetric-misclassification",
@@ -32,42 +32,42 @@
     "href": "index.html#clinical-utility",
     "title": "",
     "section": "Clinical utility",
-    "text": "Clinical utility\n\n\n\n\n\nQuality of decisions driven by dynamic predictions.\n\n\n\n\n\nDecision threshold \\(c\\in(0,1)\\).\n\n\n\n\n\n\n\n\n\n\nWidely used clinical utility metric \\(\\longrightarrow\\) net benefit (NB)\nExpected cost (EC):\n\n\\[\\normalsize\\require{color}\\begin{split}\n        \\begin{split}\n        \\text{EC}_c\\big(\\pi_i(s\\mid t),\\, & D_i(t,s)\\big) =  c\\mathbf{1}\\{\\pi_i(s\\mid t)\\geq c\\} (1-D_i(t,s))\\\\\n        &+(1-c)\\mathbf{1}\\{\\pi_i(s\\mid t)&lt; c\\}D_i(t,s)\n    \\end{split}\n    \\end{split} \\]"
+    "text": "Clinical utility\n\n\n\n\n\nQuality of decisions based on dynamic predictions.\n\n\n\n\n\nDecision threshold \\(c\\in(0,1)\\).\n\n\n\n\n\n\n\n\n\n\nWidely used clinical utility metric \\(\\longrightarrow\\) net benefit (NB)\nExpected cost (EC):\n\n\\[\\normalsize\\require{color}\\begin{split}\n        \\begin{split}\n        \\text{EC}_c\\big(\\pi_i(s\\mid t),\\, & D_i(t,s)\\big) =  c\\mathbf{1}\\{\\pi_i(s\\mid t)\\geq c\\} (1-D_i(t,s))\\\\\n        &+(1-c)\\mathbf{1}\\{\\pi_i(s\\mid t)&lt; c\\}D_i(t,s)\n    \\end{split}\n    \\end{split} \\]"
   },
   {
     "objectID": "index.html#integrated-weighted-expected-cost",
     "href": "index.html#integrated-weighted-expected-cost",
     "title": "",
     "section": "Integrated weighted expected cost",
-    "text": "Integrated weighted expected cost\n\n\nTo avoid reliance on a single \\(c\\) and achieve strict properness:\n\n\\[\\normalsize\\require{color}\\begin{split} & \\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big) = \\\\ & \\int_0^1\\text{EC}_c\\big(\\pi_i(s\\mid t),D_i(t,s)\\big)w(c)dc \\end{split} \\]\n\n\\(w(\\cdot)\\) \\(\\longrightarrow\\) positive weight function reflecting the clinical relevance of all \\(c\\)’s\n\n\n\n\nTo avoid reliance on a single \\(c\\) and achieve strict properness:\n\n\\[\\normalsize\\require{color}\\begin{split} & \\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big) = \\\\ & \\textcolor{#F55129}{\\int_0^1}\\text{EC}_c\\big(\\pi_i(s\\mid t),D_i(t,s)\\big)\\textcolor{#F55129}{w(c)dc} \\end{split} \\]\n\n\\(w(\\cdot)\\) \\(\\longrightarrow\\) positive weight function reflecting the clinical relevance of all \\(c\\)’s\n\n\n\n\nTo avoid reliance on a single \\(c\\) and achieve strict properness:\n\n\\[\\normalsize\\require{color}\\begin{split} & \\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big) = \\\\ & \\textcolor{#F55129}{\\int_0^1}\\text{EC}_c\\big(\\pi_i(s\\mid t),D_i(t,s)\\big)\\textcolor{#F55129}{w(c)dc} \\end{split} \\]\n\nIn practice \\(\\longrightarrow\\) beta family of weight functions \\(w(c;\\alpha,\\beta)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA scoring rule is centered and strictly proper \\(\\Longleftrightarrow\\) it can be represented by \\(\\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big)\\) for some \\(w(\\cdot)\\).\n\n\\(w(c)=1\\) \\(\\longrightarrow\\) Brier score\n\\(w(c)=c^{-1}(1-c)^{-1}\\) \\(\\longrightarrow\\) logarithmic score"
+    "text": "Integrated weighted expected cost\n\n\nAvoid reliance on \\(c\\) and achieve strict properness:\n\n\\[\\normalsize\\require{color}\\begin{split} & \\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big) = \\\\ & \\int_0^1\\text{EC}_c\\big(\\pi_i(s\\mid t),D_i(t,s)\\big)w(c)dc \\end{split} \\]\n\n\\(w(\\cdot)\\) \\(\\longrightarrow\\) positive weight function, clinical relevance of all \\(c\\)’s\n\n\n\n\nAvoid reliance on \\(c\\) and achieve strict properness:\n\n\\[\\normalsize\\require{color}\\begin{split} & \\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big) = \\\\ & \\textcolor{#F55129}{\\int_0^1}\\text{EC}_c\\big(\\pi_i(s\\mid t),D_i(t,s)\\big)\\textcolor{#F55129}{w(c)dc} \\end{split} \\]\n\n\\(w(\\cdot)\\) \\(\\longrightarrow\\) positive weight function, clinical relevance of all \\(c\\)’s\n\n\n\n\nAvoid reliance on \\(c\\) and achieve strict properness:\n\n\\[\\normalsize\\require{color}\\begin{split} & \\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big) = \\\\ & \\textcolor{#F55129}{\\int_0^1}\\text{EC}_c\\big(\\pi_i(s\\mid t),D_i(t,s)\\big)\\textcolor{#F55129}{w(c)dc} \\end{split} \\]\n\nIn practice \\(\\longrightarrow\\) beta family \\(w(c;\\alpha,\\beta)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCentered and strictly proper\n\\(\\Longleftrightarrow\\)\n\\(\\text{IWEC}_w \\big(\\pi_i(s\\mid t), D_i(t,s)\\big)\\) for some \\(w(\\cdot)\\)\n\n\n\n\\(w(c)=1\\) \\(\\longrightarrow\\) Brier score\n\\(w(c)=c^{-1}(1-c)^{-1}\\) \\(\\longrightarrow\\) logarithmic score"
   },
   {
     "objectID": "index.html#estimation-under-ltrc-data",
     "href": "index.html#estimation-under-ltrc-data",
     "title": "",
     "section": "Estimation under LTRC data",
-    "text": "Estimation under LTRC data\n\nTo estimate:\n\n\\[\\text{eIWEC}_w(t,s)=E\\big[\\text{IWEC}_w\\big(\\pi(s\\mid t),D(t,s)\\big) \\mid T^*&gt;t\\big]\\]\n\nWe propose two approaches:\n\nA nonparametric IPW estimator.\nA model-based estimator.\n\nWe established consistency and asymptotic normality."
+    "text": "Estimation under LTRC data\n\nTo estimate:\n\n\\[\\text{eIWEC}_w(t,s)=E\\big[\\text{IWEC}_w\\big(\\pi(s\\mid t),D(t,s)\\big) \\mid T^*&gt;t\\big]\\]\n\n\n\n\nTwo approaches:\n\nAn IPW estimator.\nA model-based estimator."
   },
   {
     "objectID": "index.html#application-opticore",
     "href": "index.html#application-opticore",
     "title": "",
     "section": "Application: OPTICORE",
-    "text": "Application: OPTICORE\n\n\nGoal \\(\\longrightarrow\\) outperform current clinical practice for CCS administration.\nIn the Netherlands:\n\nStrategy 1 \\(\\longrightarrow\\) when pulsatility index of the umbilical artery becomes abnormal\nStrategy 2 \\(\\longrightarrow\\) when an absent or reversed end-diastolic velocity of the umbilical artery is detected\n\n\n\n\n\nShared-parameter joint model with fetal and maternal outcomes:\n\n\\[\\scriptsize\\begin{split}\n\\textcolor{#F55129}{\\text{JM}}:  h_{i}\\left(t \\mid \\boldsymbol{\\mathcal{H}}_{i}(t), \\boldsymbol{X}_{i}\\right) =h_{0}(t) \\exp \\left(  \\gamma\\boldsymbol{X}_{i} + \\sum_{j=1}^6\\alpha_j f_j\\{\\boldsymbol{\\mathcal{H}}_{i}(t))\\} \\right)\n\\end{split}\\]\n\n\n\n\n\\(\\boldsymbol{X}_{i}\\) \\(\\longrightarrow\\) baseline covariates including age, smoking status, previous pregnancy, diabetes mellitus, etc.\n\n\n\n\nShared-parameter joint model with fetal and maternal outcomes:\n\n\\[\\scriptsize\\begin{split}\n\\textcolor{#F55129}{\\text{JM}}:  h_{i}\\left(t \\mid \\boldsymbol{\\mathcal{H}}_{i}(t), \\boldsymbol{X}_{i}\\right) =h_{0}(t) \\exp \\left(  \\gamma\\boldsymbol{X}_{i} + \\sum_{j=1}^6\\alpha_j f_j\\{\\boldsymbol{\\mathcal{H}}_{i}(t))\\} \\right)\n\\end{split}\\]\n\nDynamic predictions \\(\\longrightarrow\\) \\((t,t+s]\\), where \\(t=26, 27, \\dots, 33\\) and \\(s=1\\) weeks.\nWe consider \\(c\\in(0.1,0.3)\\) and \\(w(c;5.16, 17.62)\\)."
+    "text": "Application: OPTICORE\n\n\nGoal \\(\\longrightarrow\\) outperform clinical practice for CCS.\n\n\n\n\n\nIn the Netherlands:\n\nStrategy 1 \\(\\longrightarrow\\) when pulsatility index of the umbilical artery becomes abnormal\nStrategy 2 \\(\\longrightarrow\\) when an absent or reversed end-diastolic velocity of the umbilical artery is detected\n\n\n\n\n\nJoint model with fetal and maternal outcomes:\n\n\\[\\scriptsize\\begin{split}\n\\textcolor{#F55129}{\\text{JM}}:  h_{i}\\left(t \\mid \\boldsymbol{\\mathcal{H}}_{i}(t), \\boldsymbol{X}_{i}\\right) =h_{0}(t) \\exp \\left(  \\gamma\\boldsymbol{X}_{i} + \\sum_{j=1}^6\\alpha_j f_j\\{\\boldsymbol{\\mathcal{H}}_{i}(t))\\} \\right)\n\\end{split}\\]\n\n\n\n\n\\(\\boldsymbol{X}_{i}\\) \\(\\longrightarrow\\) baseline covariates: age, smoking status, previous pregnancy, diabetes mellitus, etc.\n\n\n\n\nJoint model with fetal and maternal outcomes:\n\n\\[\\scriptsize\\begin{split}\n\\textcolor{#F55129}{\\text{JM}}:  h_{i}\\left(t \\mid \\boldsymbol{\\mathcal{H}}_{i}(t), \\boldsymbol{X}_{i}\\right) =h_{0}(t) \\exp \\left(  \\gamma\\boldsymbol{X}_{i} + \\sum_{j=1}^6\\alpha_j f_j\\{\\boldsymbol{\\mathcal{H}}_{i}(t))\\} \\right)\n\\end{split}\\]\n\n\n\n\nDynamic predictions \\(\\longrightarrow\\) \\((t,t+s]\\), where \\(t=26, 27, \\dots, 33\\) and \\(s=1\\) weeks.\nWe consider \\(c\\in(0.1,0.3)\\) and \\(w(c;5.16, 17.62)\\)."
   },
   {
     "objectID": "index.html#simulation-study-results",
     "href": "index.html#simulation-study-results",
     "title": "",
     "section": "Simulation study: results",
-    "text": "Simulation study: results\n\nBS, AUC and logS \\(\\longrightarrow\\) favored models with good accuracy and discrimination.\n\n\n\n\n\nNB and IWEC \\(\\longrightarrow\\) favored models that better reflected clinical value.\n\n\n\n\n\nNB \\(\\longrightarrow\\) sensitive to decision threshold misspecification.\n\n\n\n\n\nIWEC \\(\\longrightarrow\\) robust across weight functions."
+    "text": "Simulation study: results\n\nBS, AUC and logS \\(\\longrightarrow\\) good accuracy, discrimination and calibration.\n\n\n\n\n\nNB and IWEC \\(\\longrightarrow\\) clinical value.\n\n\n\n\n\nNB \\(\\longrightarrow\\) sensitive to decision threshold misspecification.\n\n\n\n\n\nIWEC \\(\\longrightarrow\\) robust across weight functions."
   },
   {
     "objectID": "index.html#contribution",
     "href": "index.html#contribution",
     "title": "",
     "section": "Contribution",
-    "text": "Contribution\n\n\nExtension of clinical utility to dynamic prediction.\nIWEC and weighted decision curves.\nA comprehensive estimation framework for LTRC data.\nMethods will be available in the JMbayes2 R package."
+    "text": "Contribution\n\nClinical utility \\(\\leadsto\\) dynamic prediction.\nIWEC and weighted decision curves.\nEstimation framework for LTRC data.\nImplementation in the JMbayes2 R package."
   },
   {
     "objectID": "index.html#challenges-of-the-data",

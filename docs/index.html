@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>quarto-input27466be70ddae2b0</title>
+  <title>quarto-inputc0311d292af34ce5</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -134,8 +134,11 @@
 <h2>Motivation</h2>
 <div class="fragment fade-out" style="position:absolute; top:12%; left:0%;">
 <ul>
-<li><span style="color:#F55129;">Evaluate dynamic predictions</span> of imminent delivery (<span style="color:#F55129;">7 days</span>) in pregnancies complicated by early-onset fetal growth restriction.</li>
-<li><span style="color:#F55129;">Main goal</span> <span class="math inline">\(\longrightarrow\)</span> optimizing antenatal corticosteroid (CCS) administration</li>
+<li><span style="color:#F55129;">Evaluate dynamic predictions</span> of imminent delivery in pregnancies with FGR.
+<div style="height:35px;">
+
+</div></li>
+<li><span style="color:#F55129;">Main goal</span> <span class="math inline">\(\longrightarrow\)</span> optimizing antenatal CCSs administration</li>
 </ul>
 </div>
 <div style="position:absolute; top:60%; left:12%;">
@@ -143,7 +146,7 @@
 </div>
 <div class="fragment fade-in" style="position:absolute; top:12%; left:0%;">
 <ul>
-<li><span style="color:#F55129;">OPTICORE</span> data <span class="math inline">\(\longrightarrow\)</span> multicenter cohort study in the Netherlands</li>
+<li><span style="color:#F55129;">OPTICORE</span> <span class="math inline">\(\longrightarrow\)</span> multicenter cohort study in the Netherlands</li>
 </ul>
 </div>
 </section>
@@ -244,7 +247,7 @@
 
 </div>
 <ul>
-<li><span style="color:#F55129;">Quality of decisions</span> driven by dynamic predictions.</li>
+<li><span style="color:#F55129;">Quality of decisions</span> based on dynamic predictions.</li>
 </ul>
 <div style="height:5px;">
 
@@ -282,29 +285,29 @@
 <h2>Integrated weighted expected cost</h2>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>To avoid reliance on a single <span class="math inline">\(c\)</span> and achieve strict properness:</li>
+<li>Avoid reliance on <span class="math inline">\(c\)</span> and achieve strict properness:</li>
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \int_0^1\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)w(c)dc \end{split} \]</span></p>
 <ul>
-<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function reflecting the <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
+<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function, <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>To avoid reliance on a single <span class="math inline">\(c\)</span> and achieve strict properness:</li>
+<li>Avoid reliance on <span class="math inline">\(c\)</span> and achieve strict properness:</li>
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} \]</span></p>
 <ul>
-<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function reflecting the <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
+<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function, <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>To avoid reliance on a single <span class="math inline">\(c\)</span> and achieve strict properness:</li>
+<li>Avoid reliance on <span class="math inline">\(c\)</span> and achieve strict properness:</li>
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} \]</span></p>
 <ul>
-<li>In practice <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">beta family</span> of weight functions <span style="color:#F55129;"><span class="math inline">\(w(c;\alpha,\beta)\)</span></span></li>
+<li>In practice <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">beta family</span> <span style="color:#F55129;"><span class="math inline">\(w(c;\alpha,\beta)\)</span></span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:10%;">
@@ -334,14 +337,20 @@
 <div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:12%;">
 <p><img src="images/ws_l.png" style="width:85%; text-align:center;"></p>
 </div>
-<div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
-<ul>
-<li>A scoring rule is centered and strictly proper <span style="color:#F55129;"><span class="math inline">\(\Longleftrightarrow\)</span></span> it can be represented by <span class="math inline">\(\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)\)</span> for some <span class="math inline">\(w(\cdot)\)</span>.
-<ul>
-<li><span style="color:#F55129;"><span class="math inline">\(w(c)=1\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">Brier score</span></li>
-<li><span style="color:#F55129;"><span class="math inline">\(w(c)=c^{-1}(1-c)^{-1}\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">logarithmic score</span></li>
-</ul></li>
-</ul>
+<div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:10%;">
+<div style="height:25px;">
+
+</div>
+<div style="text-align: center;">
+<p>Centered and strictly proper</p>
+<p><span style="color:#F55129;"><span class="math inline">\(\Longleftrightarrow\)</span></span></p>
+<p><span class="math inline">\(\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)\)</span> for some <span class="math inline">\(w(\cdot)\)</span></p>
+<div style="height:50px;">
+
+</div>
+<p><span style="color:#F55129;"><span class="math inline">\(w(c)=1\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">Brier score</span></p>
+<p><span style="color:#F55129;"><span class="math inline">\(w(c)=c^{-1}(1-c)^{-1}\)</span></span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">logarithmic score</span></p>
+</div>
 </div>
 </section>
 <section id="estimation-under-ltrc-data" class="slide level2">
@@ -350,20 +359,27 @@
 <li>To <span style="color:#F55129;">estimate</span>:</li>
 </ul>
 <p><span class="math display">\[\text{eIWEC}_w(t,s)=E\big[\text{IWEC}_w\big(\pi(s\mid t),D(t,s)\big) \mid T^*&gt;t\big]\]</span></p>
+<div style="height:25px;">
+
+</div>
 <ul>
-<li>We propose two approaches:
+<li>Two approaches:
 <ul>
-<li>A nonparametric <span style="color:#F55129;">IPW</span> estimator.</li>
+<li>An <span style="color:#F55129;">IPW</span> estimator.</li>
 <li>A <span style="color:#F55129;">model-based</span> estimator.</li>
 </ul></li>
-<li>We established <span style="color:#F55129;">consistency</span> and <span style="color:#F55129;">asymptotic normality</span>.</li>
 </ul>
 </section>
 <section id="application-opticore" class="slide level2">
 <h2>Application: OPTICORE</h2>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li><span style="color:#F55129">Goal</span> <span class="math inline">\(\longrightarrow\)</span> outperform current clinical practice for CCS administration.</li>
+<li><span style="color:#F55129">Goal</span> <span class="math inline">\(\longrightarrow\)</span> outperform clinical practice for CCS.</li>
+</ul>
+<div style="height:25px;">
+
+</div>
+<ul>
 <li>In the Netherlands:
 <ul>
 <li><span style="color:#F55129">Strategy 1</span> <span class="math inline">\(\longrightarrow\)</span> when pulsatility index of the umbilical artery becomes abnormal</li>
@@ -373,7 +389,7 @@
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>Shared-parameter <span style="color:#F55129;">joint model</span> with fetal and maternal outcomes:</li>
+<li><span style="color:#F55129;">Joint model</span> with fetal and maternal outcomes:</li>
 </ul>
 <p><span class="math display">\[\scriptsize\begin{split}
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right)
@@ -382,16 +398,19 @@
 
 </div>
 <ul>
-<li><span class="math inline">\(\boldsymbol{X}_{i}\)</span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">baseline covariates</span> including age, smoking status, previous pregnancy, diabetes mellitus, etc.</li>
+<li><span class="math inline">\(\boldsymbol{X}_{i}\)</span> <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">baseline covariates</span>: age, smoking status, previous pregnancy, diabetes mellitus, etc.</li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>Shared-parameter <span style="color:#F55129;">joint model</span> with fetal and maternal outcomes:</li>
+<li><span style="color:#F55129;">Joint model</span> with fetal and maternal outcomes:</li>
 </ul>
 <p><span class="math display">\[\scriptsize\begin{split}
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right)
 \end{split}\]</span></p>
+<div style="height:15px;">
+
+</div>
 <ul>
 <li><span style="color:#F55129;">Dynamic predictions</span> <span class="math inline">\(\longrightarrow\)</span> <span class="math inline">\((t,t+s]\)</span>, where <span class="math inline">\(t=26, 27, \dots, 33\)</span> and <span class="math inline">\(s=1\)</span> weeks.</li>
 <li>We consider <span style="color:#F55129;"><span class="math inline">\(c\in(0.1,0.3)\)</span></span> and <span style="color:#F55129;"><span class="math inline">\(w(c;5.16, 17.62)\)</span></span>.</li>
@@ -428,21 +447,21 @@
 <section id="simulation-study-results" class="slide level2">
 <h2>Simulation study: results</h2>
 <ul>
-<li><span style="color:#F55129;">BS, AUC and logS</span> <span class="math inline">\(\longrightarrow\)</span> favored models with good accuracy and discrimination.</li>
+<li><span style="color:#F55129;">BS, AUC and logS</span> <span class="math inline">\(\longrightarrow\)</span> good accuracy, discrimination and calibration.</li>
 </ul>
-<div style="height:15px;">
+<div style="height:20px;">
 
 </div>
 <ul>
-<li><span style="color:#F55129;">NB and IWEC</span> <span class="math inline">\(\longrightarrow\)</span> favored models that better reflected clinical value.</li>
+<li><span style="color:#F55129;">NB and IWEC</span> <span class="math inline">\(\longrightarrow\)</span> clinical value.</li>
 </ul>
-<div style="height:15px;">
+<div style="height:20px;">
 
 </div>
 <ul>
 <li><span style="color:#F55129;">NB</span> <span class="math inline">\(\longrightarrow\)</span> sensitive to decision threshold misspecification.</li>
 </ul>
-<div style="height:15px;">
+<div style="height:20px;">
 
 </div>
 <ul>
@@ -451,17 +470,15 @@
 </section>
 <section id="contribution" class="slide level2">
 <h2>Contribution</h2>
-<div class="fragment fade-in-then-out">
 <ul>
-<li><span style="color:#F55129;">Extension of clinical utility</span> to dynamic prediction.</li>
+<li><span style="color:#F55129;">Clinical utility</span> <span class="math inline">\(\leadsto\)</span> dynamic prediction.</li>
 <li><span style="color:#F55129;">IWEC</span> and <span style="color:#F55129;">weighted decision curves</span>.</li>
-<li><span style="color:#F55129;">A comprehensive estimation framework</span> for <span style="color:#F55129;">LTRC data</span>.</li>
-<li>Methods will be available in the <span style="color:#F55129;">JMbayes2 R package</span>.</li>
+<li><span style="color:#F55129;">Estimation framework</span> for <span style="color:#F55129;">LTRC data</span>.</li>
+<li>Implementation in the <span style="color:#F55129;">JMbayes2 R package</span>.</li>
 </ul>
 <center>
 <img src="images/JMBayes2-logo-no-background.gif" width="23%">
 </center>
-</div>
 </section>
 <section id="section-1" class="slide level2" data-state="cover-slide" data-background-image="images/contra.png" data-background-size="cover" data-visibility="uncounted">
 <h2></h2>

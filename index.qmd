@@ -14,8 +14,9 @@ format:
 ## Motivation 
 
 <div style="position:absolute; top:12%; left:0%;" class="fragment fade-out">
-  - [Evaluate dynamic predictions]{style="color:#F55129;"} of imminent delivery ([7 days]{style="color:#F55129;"}) in pregnancies complicated by early-onset fetal growth restriction.
-  - [Main goal]{style="color:#F55129;"} $\longrightarrow$ optimizing antenatal corticosteroid (CCS) administration
+  - [Evaluate dynamic predictions]{style="color:#F55129;"} of imminent delivery in pregnancies with FGR.
+<div style="height:35px;"></div>
+  - [Main goal]{style="color:#F55129;"} $\longrightarrow$ optimizing antenatal CCSs administration
 </div>
 
 <div style="position:absolute; top:60%; left:12%;">
@@ -23,7 +24,7 @@ format:
 </div>
 
 <div style="position:absolute; top:12%; left:0%;" class="fragment fade-in">
-  - [OPTICORE]{style="color:#F55129;"} data $\longrightarrow$ multicenter cohort study in the Netherlands
+  - [OPTICORE]{style="color:#F55129;"} $\longrightarrow$ multicenter cohort study in the Netherlands
 </div>
 
 
@@ -139,7 +140,7 @@ $$
 
 <div style="height:10px;"></div>
 
-  - [Quality of decisions]{style="color:#F55129;"} driven by dynamic predictions.
+  - [Quality of decisions]{style="color:#F55129;"} based on dynamic predictions.
   
 <div style="height:5px;"></div>
 
@@ -182,27 +183,27 @@ $$\normalsize\require{color}\begin{split}
 ## Integrated weighted expected cost 
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-  - To avoid reliance on a single $c$ and achieve strict properness:
+  - Avoid reliance on $c$ and achieve strict properness:
   
   $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \int_0^1\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)w(c)dc \end{split} $$
   
-  - $w(\cdot)$ $\longrightarrow$ positive weight function reflecting the [clinical relevance of all $c$'s]{style="color:#F55129;"}
+  - $w(\cdot)$ $\longrightarrow$ positive weight function, [clinical relevance of all $c$'s]{style="color:#F55129;"}
 </div>
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-  - To avoid reliance on a single $c$ and achieve strict properness:
+  - Avoid reliance on $c$ and achieve strict properness:
   
   $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} $$
   
-  - $w(\cdot)$ $\longrightarrow$ positive weight function reflecting the [clinical relevance of all $c$'s]{style="color:#F55129;"}
+  - $w(\cdot)$ $\longrightarrow$ positive weight function, [clinical relevance of all $c$'s]{style="color:#F55129;"}
 </div>
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-  - To avoid reliance on a single $c$ and achieve strict properness:
+  - Avoid reliance on $c$ and achieve strict properness:
   
   $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} $$
   
-  - In practice $\longrightarrow$ [beta family]{style="color:#F55129;"} of weight functions [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
+  - In practice $\longrightarrow$ [beta family]{style="color:#F55129;"} [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
 </div>
 
 <div style="position:absolute; top:12%; left:10%;" class="fragment fade-in-then-out">
@@ -241,10 +242,22 @@ $$\normalsize\require{color}\begin{split}
   <img src="images/ws_l.png" style="width:85%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-* A scoring rule is centered and strictly proper [$\Longleftrightarrow$]{style="color:#F55129;"} it can be represented by $\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)$ for some $w(\cdot)$.
-  + [$w(c)=1$]{style="color:#F55129;"} $\longrightarrow$ [Brier score]{style="color:#F55129;"}
-  + [$w(c)=c^{-1}(1-c)^{-1}$]{style="color:#F55129;"} $\longrightarrow$  [logarithmic score]{style="color:#F55129;"}
+<div style="position:absolute; top:13%; left:10%;" class="fragment fade-in-then-out">
+
+<div style="height:25px;"></div>
+<div style="text-align: center;">
+Centered and strictly proper
+
+[$\Longleftrightarrow$]{style="color:#F55129;"} 
+
+$\text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big)$ for some $w(\cdot)$
+
+<div style="height:50px;"></div>
+
+[$w(c)=1$]{style="color:#F55129;"} $\longrightarrow$ [Brier score]{style="color:#F55129;"}
+
+[$w(c)=c^{-1}(1-c)^{-1}$]{style="color:#F55129;"} $\longrightarrow$  [logarithmic score]{style="color:#F55129;"}
+</div>
 </div>
 
 
@@ -258,24 +271,28 @@ $$\normalsize\require{color}\begin{split}
 
 $$\text{eIWEC}_w(t,s)=E\big[\text{IWEC}_w\big(\pi(s\mid t),D(t,s)\big) \mid T^*>t\big]$$
 
-* We propose two approaches:
-  + A nonparametric [IPW]{style="color:#F55129;"} estimator.
+<div style="height:25px;"></div>
+
+* Two approaches:
+  + An [IPW]{style="color:#F55129;"} estimator.
   + A [model-based]{style="color:#F55129;"} estimator.
 
-* We established [consistency]{style="color:#F55129;"} and [asymptotic normality]{style="color:#F55129;"}.
 
 
 ## Application: OPTICORE 
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-* [Goal]{style="color:#F55129"} $\longrightarrow$ outperform current clinical practice for CCS administration.
+* [Goal]{style="color:#F55129"} $\longrightarrow$ outperform clinical practice for CCS.
+
+<div style="height:25px;"></div>
+
 * In the Netherlands:
   + [Strategy 1]{style="color:#F55129"} $\longrightarrow$ when pulsatility index of the umbilical artery becomes abnormal
   + [Strategy 2]{style="color:#F55129"} $\longrightarrow$ when an absent or reversed end-diastolic velocity of the umbilical artery is detected
 </div>
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-- Shared-parameter [joint model]{style="color:#F55129;"} with fetal and maternal outcomes:
+- [Joint model]{style="color:#F55129;"} with fetal and maternal outcomes:
 
 $$\scriptsize\begin{split} 
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right) 
@@ -283,15 +300,17 @@ $$\scriptsize\begin{split}
 
 <div style="height:15px;"></div>
 
-- $\boldsymbol{X}_{i}$ $\longrightarrow$ [baseline covariates]{style="color:#F55129;"} including age, smoking status, previous pregnancy, diabetes mellitus, etc. 
+- $\boldsymbol{X}_{i}$ $\longrightarrow$ [baseline covariates]{style="color:#F55129;"}: age, smoking status, previous pregnancy, diabetes mellitus, etc. 
 </div>
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-- Shared-parameter [joint model]{style="color:#F55129;"} with fetal and maternal outcomes:
+- [Joint model]{style="color:#F55129;"} with fetal and maternal outcomes:
 
 $$\scriptsize\begin{split} 
 \textcolor{#F55129}{\text{JM}}:  h_{i}\left(t \mid \boldsymbol{\mathcal{H}}_{i}(t), \boldsymbol{X}_{i}\right) =h_{0}(t) \exp \left(  \gamma\boldsymbol{X}_{i} + \sum_{j=1}^6\alpha_j f_j\{\boldsymbol{\mathcal{H}}_{i}(t))\} \right) 
 \end{split}$$
+
+<div style="height:15px;"></div>
 
 - [Dynamic predictions]{style="color:#F55129;"} $\longrightarrow$  $(t,t+s]$, where $t=26, 27, \dots, 33$ and $s=1$ weeks. 
 - We consider [$c\in(0.1,0.3)$]{style="color:#F55129;"} and [$w(c;5.16, 17.62)$]{style="color:#F55129;"}.
@@ -336,17 +355,17 @@ $$\scriptsize\begin{split}
 
 ## Simulation study: results 
 
-* [BS, AUC and logS]{style="color:#F55129;"} $\longrightarrow$ favored models with good accuracy and discrimination.
+* [BS, AUC and logS]{style="color:#F55129;"} $\longrightarrow$ good accuracy, discrimination and calibration.
 
-<div style="height:15px;"></div>
+<div style="height:20px;"></div>
 
-* [NB and IWEC]{style="color:#F55129;"} $\longrightarrow$ favored models that better reflected clinical value.
+* [NB and IWEC]{style="color:#F55129;"} $\longrightarrow$ clinical value.
 
-<div style="height:15px;"></div>
+<div style="height:20px;"></div>
 
 * [NB]{style="color:#F55129;"} $\longrightarrow$ sensitive to decision threshold misspecification.
 
-<div style="height:15px;"></div>
+<div style="height:20px;"></div>
 
 
 * [IWEC]{style="color:#F55129;"} $\longrightarrow$ robust across weight functions.
@@ -354,18 +373,16 @@ $$\scriptsize\begin{split}
 
 ## Contribution 
 
-::: {.fragment .fade-in-then-out}
-
-- [Extension of clinical utility]{style="color:#F55129;"} to dynamic prediction.
+- [Clinical utility]{style="color:#F55129;"} $\leadsto$ dynamic prediction.
 - [IWEC]{style="color:#F55129;"} and [weighted decision curves]{style="color:#F55129;"}.
-- [A comprehensive estimation framework]{style="color:#F55129;"} for [LTRC data]{style="color:#F55129;"}. 
-- Methods will be available in the [JMbayes2 R package]{style="color:#F55129;"}.
+- [Estimation framework]{style="color:#F55129;"} for [LTRC data]{style="color:#F55129;"}. 
+- Implementation in the [JMbayes2 R package]{style="color:#F55129;"}.
 
 <center>
 <img src="images/JMBayes2-logo-no-background.gif" width="23%">
 </center>
 
-:::
+
 
 ## { data-state="cover-slide" data-background-image="images/contra.png" data-background-size="cover" visibility="uncounted"}
 
