@@ -122,12 +122,12 @@ $$
   - [Centered]{style="color:#F55129;"} if $\mathcal{S}(1,1)=\mathcal{S}(0,0)=0$.
 </div>
 
-<div style="position:absolute; top:16%; left:10%;" class="fragment fade-in">
-  <img src="images/table1.svg" style="width:90%; text-align:center;">
+<div style="position:absolute; top:17%; left:21%;" class="fragment fade-in">
+  <img src="images/table1_smaller.svg" style="width:77%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:73%; left:20.8%;" class="fragment fade-in">
-  <img src="images/new_noarrow2.svg" style="width:75%; text-align:center;">
+<div style="position:absolute; top:60%; left:11.25%;" class="fragment fade-in">
+  <img src="images/new_noarrow2.svg" style="width:92%; text-align:center;">
 </div>
 
 
@@ -168,13 +168,13 @@ $$\normalsize\require{color}\begin{split}
 </div>
 
 
-<div style="position:absolute; top:13%; left:10%;" class="fragment fade-in">
-  <img src="images/table2.svg" style="width:100%; text-align:center;">
+<div style="position:absolute; top:13%; left:21%;" class="fragment fade-in">
+  <img src="images/table2_smaller.svg" style="width:75%; text-align:center;">
 </div>
 
 
-<div style="position:absolute; top:62%; left:3%;" class="fragment fade-in-then-out">
-  <img src="images/arrow3_new.svg" style="width:67%; text-align:center;">
+<div style="position:absolute; top:65%; left:26%;" class="fragment fade-in-then-out">
+  <img src="images/noarrow_t2.svg" style="width:80%; text-align:center;">
 </div>
 
 
@@ -203,15 +203,11 @@ $$\normalsize\require{color}\begin{split}
   
   $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} $$
   
-  - In practice $\longrightarrow$ [beta family]{style="color:#F55129;"} [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
+  - In practice $\longrightarrow$ we implement [beta family]{style="color:#F55129;"} of weights [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
 </div>
 
 <div style="position:absolute; top:12%; left:10%;" class="fragment fade-in-then-out">
-  <img src="images/table3b.svg" style="width:94.75%; text-align:center;">
-</div>
-
-<div style="position:absolute; top:12%; left:4%;" class="fragment fade-in-then-out">
-  <img src="images/table3bis.svg" style="width:100%; text-align:center;">
+  <img src="images/full_t3.svg" style="width:87%; text-align:center;">
 </div>
 
 <div style="position:absolute; top:10%; left:12%;" class="fragment fade-in-then-out">
