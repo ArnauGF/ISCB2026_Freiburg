@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>quarto-input89a56a7acd7d8865</title>
+  <title>quarto-inputc8d487312cb4f8f1</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -289,7 +289,13 @@
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \int_0^1\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)w(c)dc \end{split} \]</span></p>
 <ul>
-<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function, <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
+<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive function, <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
+</ul>
+<div style="height:2px;">
+
+</div>
+<ul>
+<li>In practice <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">beta family</span> <span style="color:#F55129;"><span class="math inline">\(w(c;\alpha,\beta)\)</span></span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
@@ -298,16 +304,13 @@
 </ul>
 <p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} \]</span></p>
 <ul>
-<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive weight function, <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
+<li><span class="math inline">\(w(\cdot)\)</span> <span class="math inline">\(\longrightarrow\)</span> positive function, <span style="color:#F55129;">clinical relevance of all <span class="math inline">\(c\)</span>’s</span></li>
 </ul>
+<div style="height:2px;">
+
 </div>
-<div class="fragment fade-in-then-out" style="position:absolute; top:13%; left:0%;">
 <ul>
-<li>Avoid reliance on <span class="math inline">\(c\)</span> and achieve strict properness:</li>
-</ul>
-<p><span class="math display">\[\normalsize\require{color}\begin{split} &amp; \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ &amp; \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} \]</span></p>
-<ul>
-<li>In practice <span class="math inline">\(\longrightarrow\)</span> we implement <span style="color:#F55129;">beta family</span> of weights <span style="color:#F55129;"><span class="math inline">\(w(c;\alpha,\beta)\)</span></span></li>
+<li>In practice <span class="math inline">\(\longrightarrow\)</span> <span style="color:#F55129;">beta family</span> <span style="color:#F55129;"><span class="math inline">\(w(c;\alpha,\beta)\)</span></span></li>
 </ul>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:10%;">

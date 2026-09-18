@@ -187,7 +187,11 @@ $$\normalsize\require{color}\begin{split}
   
   $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \int_0^1\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)w(c)dc \end{split} $$
   
-  - $w(\cdot)$ $\longrightarrow$ positive weight function, [clinical relevance of all $c$'s]{style="color:#F55129;"}
+  - $w(\cdot)$ $\longrightarrow$ positive function, [clinical relevance of all $c$'s]{style="color:#F55129;"}
+
+<div style="height:2px;"></div>  
+
+  - In practice $\longrightarrow$ [beta family]{style="color:#F55129;"} [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
 </div>
 
 <div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
@@ -195,16 +199,13 @@ $$\normalsize\require{color}\begin{split}
   
   $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} $$
   
-  - $w(\cdot)$ $\longrightarrow$ positive weight function, [clinical relevance of all $c$'s]{style="color:#F55129;"}
+  - $w(\cdot)$ $\longrightarrow$ positive function, [clinical relevance of all $c$'s]{style="color:#F55129;"}
+  
+<div style="height:2px;"></div>
+
+  - In practice $\longrightarrow$ [beta family]{style="color:#F55129;"} [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
 </div>
 
-<div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
-  - Avoid reliance on $c$ and achieve strict properness:
-  
-  $$\normalsize\require{color}\begin{split} & \text{IWEC}_w \big(\pi_i(s\mid t), D_i(t,s)\big) = \\ & \textcolor{#F55129}{\int_0^1}\text{EC}_c\big(\pi_i(s\mid t),D_i(t,s)\big)\textcolor{#F55129}{w(c)dc} \end{split} $$
-  
-  - In practice $\longrightarrow$ we implement [beta family]{style="color:#F55129;"} of weights [$w(c;\alpha,\beta)$]{style="color:#F55129;"}
-</div>
 
 <div style="position:absolute; top:12%; left:10%;" class="fragment fade-in-then-out">
   <img src="images/full_t3.svg" style="width:87%; text-align:center;">
